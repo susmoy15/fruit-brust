@@ -19,29 +19,116 @@
 </head>
 
 <body>
-    <header>  
-        <nav>
-            <section class="flex justify-between items-center ml-52 mr-52 bg-[#F85559] mt-12 rounded-full p-6">
-                <div class="flex items-center">
-                    <h class="text-[#fff] p-2 text-[18px] font-medium">Home</h>
-                    <h1 class="text-[#fff] p-2 text-[18px] font-medium">About Us</h1>
-                    <h1 class="text-[#fff] p-2 text-[18px] font-medium">Shop</h1>
-                    <h1 class="text-[#fff] p-2 text-[18px] font-medium">All Fruits</h1>
-                </div>
-                <div class="flex items-center">
-                    <img src="images/logo.png" alt="">
-                    <h1 class="text-[#fff] p-2 text-[35px] font-bold">Fruit Burst</h1>
-                </div>
-                <div class="flex">
-                    <input type="text" placeholder="Search here" class="input w-full max-w-xs rounded-full mr-6" />
-                   <div class="relative right-16 top-3">
-                    <i class="fa-solid fa-magnifying-glass font-extrabold"></i>
-                   </div>
-                </div>
-            </section>
+    <header>
+        <nav class="flex justify-between items-center bg-white md:bg-gradient-to-r from-red-400 to-red-500  w-11/12 mx-auto rounded-full py-3 px-6 my-9 md:my-10">
+            <div class="hidden lg:block">
+                <ul class="text-xl font-normal text-white flex gap-5">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                </ul>
+            </div>
+            <div class="flex items-center">
+                <img class="h-8" src="images/logo.png" alt="">
+                <h3 class="text-2xl lg:text-4xl ml-2 text-white font-bold">Fruit Burst</h3>
+            </div>
+            <div class="flex">
+                <input type="text" placeholder="Search here" class="input w-full max-w-xs rounded-full mr-6" />
+               <div class="relative right-16 top-3">
+                <i class="fa-solid fa-magnifying-glass font-extrabold"></i>
+               </div>
+            </div>
+            <div class="lg:hidden bg-none dropdown dropdown-bottom dropdown-end">
+                <label tabindex="0" class="btn m-1"><img class="h-6" src="images/icons/menu.png" alt=""></label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
         </nav>
-    </header>     
-</body>
-         
-        
-        
+        <!-- banner start -->
+        <section class="banner-section w-11/12 mx-auto">
+            <div class="carousel rounded h-80 md:h-[480px] w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="w-full bg-blend-overlay bg-black bg-opacity-30 bg-cover bg-[url('./images/banner1.png')] flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <h1 class="text-4xl md:text-7xl font-black">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-xl font-normal my-5">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] text-xl font-bold rounded-2xl px-6 py-4">Shop Now</button>
+                        </div>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="w-full bg-cover bg-blend-overlay bg-black bg-opacity-30 bg-[url('./images/banner2.png')] flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <h1 class="text-4xl md:text-7xl font-black">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-xl font-normal my-5">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] text-xl font-bold rounded-2xl px-6 py-4">Shop Now</button>
+                        </div>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="w-full bg-cover  bg-[url('./images/banner3.png')] flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <h1 class="text-4xl md:text-7xl font-black">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-xl font-normal my-5">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] text-xl font-bold rounded-2xl px-6 py-4">Shop Now</button>
+                        </div>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="w-full bg-cover bg-blend-overlay bg-black bg-opacity-30 bg-[url('./images/banner4.png')] flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <h1 class="text-4xl md:text-7xl font-black">Exotic tastes at your <br> doorstep</h1>
+                            <p class="text-xl font-normal my-5">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] text-xl font-bold rounded-2xl px-6 py-4">Shop Now</button>
+                        </div>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="hidden lg:block">
+                <div class="flex justify-around w-10/12 mx-auto bg-white p-6 rounded shadow-lg relative bottom-20">
+                    <div class="text-center">
+                        <img class="h-28" src="images/fruit1.png" alt="">
+                        <p class="text-xl font-normal text-[#121212]">Strawberry</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="h-28" src="images/fruit2.png" alt="">
+                        <p class="text-xl font-normal text-[#121212]">Orange</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="h-28" src="images/fruit3.png" alt="">
+                        <p class="text-xl font-normal text-[#121212]">Mango</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="h-28" src="images/fruit4.png" alt="">
+                        <p class="text-xl font-normal text-[#121212]">Strawberry</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="h-28" src="images/fruit5.png" alt="">
+                        <p class="text-xl font-normal text-[#121212]">Mango</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
